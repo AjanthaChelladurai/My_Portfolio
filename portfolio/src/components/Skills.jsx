@@ -1,16 +1,28 @@
-import React from 'react'
+import React from "react";
 
-const skills = ['ReactJS','JavaScript','HTML','CSS','Tailwind CSS','Bootstrap','MongoDB','NodeJS']
+const skills = [
+  { name: "Java", img: "https://cdn-icons-png.flaticon.com/512/226/226777.png" },
+  { name: "React", img: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" },
+  { name: "Node.js", img: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
+  { name: "MongoDB", img: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" },
+  { name: "HTML", img: "https://cdn-icons-png.flaticon.com/512/732/732212.png" },
+  { name: "CSS", img: "https://cdn-icons-png.flaticon.com/512/732/732190.png" },
+  { name: "JavaScript", img: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png" },
+];
 
-export default function Skills(){
+export default function Skills() {
   return (
-    <div className="max-w-4xl mx-auto">
-      <h2 className="text-2xl font-semibold mb-4">Skills</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {skills.map(s=> (
-          <div key={s} className="p-4 bg-[#071826] border border-gray-800 rounded-md text-center">{s}</div>
+    <div className="text-white bg-[#0a1a2f] p-10 max-w-4xl mx-auto mt-8 bg-[#0a1a2f] ">
+      <h2 className="text-2xl font-bold mb-6">Skills</h2>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {skills.map((skill) => (
+          <div key={skill.name} className="text-center">
+            <img src={skill.img} alt={skill.name} className="w-16 h-16 mx-auto" />
+            <p className="mt-2">{skill.name}</p>
+          </div>
         ))}
       </div>
     </div>
-  )
+  );
 }

@@ -1,31 +1,45 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import About from './components/About'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Internship from './components/Internship'
-import Contact from './components/Contact'
-import ChatBot from './components/Chatbot'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Internship from "./components/Internship";
+import Contact from "./components/Contact";
 
-export default function App(){
+
+export default function App() {
   return (
-    <div className="min-h-screen">
+    <div className="relative">
       <Navbar />
-      <div className="pt-20 px-6">
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/skills" element={<Skills/>} />
-          <Route path="/projects" element={<Projects/>} />
-          <Route path="/internship" element={<Internship/>} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/chatbot" element={<ChatBot/>} />
-        </Routes>
-      </div>
-    </div>
-  )
-}
 
+      <section id="home" className="pt-20">
+        <Home />
+      </section>
+
+      <section id="about" className="pt-20">
+        <About />
+      </section>
+
+      <section id="skills" className="pt-20">
+        <Skills />
+      </section>
+
+      <section id="projects" className="pt-20">
+        <Projects />
+      </section>
+
+      <section id="internship" className="pt-20">
+        <Internship />
+      </section>
+
+      <section id="contact" className="pt-20">
+        <Contact />
+      </section>
+
+      {/* Floating Chatbot */}
+      
+    </div>
+  );
+}
 

@@ -1,35 +1,32 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { Github, Linkedin } from 'lucide-react'
+import React from "react";
+import { Github, Linkedin } from "lucide-react";
 
-export default function Navbar(){
+export default function Navbar() {
+  const scrollTo = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#071126] border-b border-gray-800">
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <div>
-          <h1 className="text-xl font-semibold">Your Name</h1>
-          <p className="text-sm text-gray-400">MERN Stack Developer</p>
-        </div>
+    <nav className="fixed top-0 left-0 right-0 bg-[#071126] text-white shadow-md py-4 px-6 flex justify-between z-50">
+      <h1 className="text-xl font-semibold cursor-pointer" onClick={() => scrollTo("home")}>
+        My Portfolio
+      </h1>
 
-        <div className="hidden md:flex items-center gap-6 text-sm">
-          <Link to="/" className="hover:text-blue-300">Home</Link>
-          <Link to="/about" className="hover:text-blue-300">About</Link>
-          <Link to="/skills" className="hover:text-blue-300">Skills</Link>
-          <Link to="/projects" className="hover:text-blue-300">Projects</Link>
-          <Link to="/internship" className="hover:text-blue-300">Internship</Link>
-          <Link to="/contact" className="hover:text-blue-300">Contact</Link>
-          <Link to="/chatbot" className="hover:text-blue-300">ChatBot</Link>
-        </div>
+      <div className="flex gap-6">
+        <button onClick={() => scrollTo("home")}>Home</button>
+        <button onClick={() => scrollTo("about")}>About</button>
+        <button onClick={() => scrollTo("skills")}>Skills</button>
+        <button onClick={() => scrollTo("projects")}>Projects</button>
+        <button onClick={() => scrollTo("internship")}>Internship</button>
+        <button onClick={() => scrollTo("contact")}>Contact</button>
 
-        <div className="flex items-center gap-4">
-          <a href="https://github.com/yourusername" target="_blank">
-            <Github className="w-6 h-6 hover:text-blue-300" />
-          </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank">
-            <Linkedin className="w-6 h-6 hover:text-blue-300" />
-          </a>
-        </div>
+        <a href="https://github.com/AjanthaChelladurai" target="_blank">
+          <Github />
+        </a>
+        <a href="https://www.linkedin.com/in/ajantha-chelladurai-5391b1252/" target="_blank">
+          <Linkedin />
+        </a>
       </div>
     </nav>
-  )
+  );
 }
