@@ -3,7 +3,7 @@ import React from "react";
 const skills = [
   { name: "Java", img: "https://cdn-icons-png.flaticon.com/512/226/226777.png" },
   { name: "React", img: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" },
-  { name: "Node.js", img: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
+  //{ name: "Node.js", img: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
   { name: "MongoDB", img: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" },
   { name: "HTML", img: "https://cdn-icons-png.flaticon.com/512/732/732212.png" },
   { name: "CSS", img: "https://cdn-icons-png.flaticon.com/512/732/732190.png" },

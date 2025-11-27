@@ -7,7 +7,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-[#071126] text-white shadow-md py-4 px-6 flex justify-between z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-[#0a1a2f] text-white shadow-md py-4 px-6 flex justify-between z-50">
       <h1 className="text-xl font-semibold cursor-pointer" onClick={() => scrollTo("home")}>
         My Portfolio
       </h1>

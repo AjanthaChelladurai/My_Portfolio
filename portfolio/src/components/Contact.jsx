@@ -61,7 +61,7 @@ export default function Contact() {
           
           {/* 1. Name Input */}
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1 text-blue-700">Name</label>
+            <label htmlFor="name" className="block text-sm font-medium  mb-1 text-blue-700">Name</label>
             <input
               type="text" id="name" name="name" required
               value={formData.name} onChange={handleChange} // Controlled input
@@ -71,7 +71,7 @@ export default function Contact() {
           </div>
           {/* 2. Email Input */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1 text-blue-700">Email</label>
+            <label htmlFor="email" className="block text-sm font-medium mb-1 text-blue-700">Email</label>
             <input
               type="email"
               id="email"
@@ -85,7 +85,7 @@ export default function Contact() {
 
           {/* 3. Subject Input */}
           <div>
-            <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-1 text-blue-700">Subject</label>
+            <label htmlFor="subject" className="block text-sm font-medium  mb-1 text-blue-700">Subject</label>
             <input
               type="text"
               id="subject"
@@ -98,7 +98,7 @@ export default function Contact() {
 
           {/* 4. Message Textarea */}
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1 text-blue-700">Message</label>
+            <label htmlFor="message" className="block text-sm font-medium mb-1 text-blue-700">Message</label>
             <textarea
               id="message" name="message" rows="4" required
               value={formData.message} onChange={handleChange} // Controlled input
