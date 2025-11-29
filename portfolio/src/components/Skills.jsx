@@ -12,7 +12,8 @@ const skills = [
 ];
 export default function Skills() {
   return (
-    <div className="text-white bg-[#0a1a2f] p-10 max-w-4xl mx-auto mt-8 bg-[#0a1a2f] ">
+    <div className="text-white bg-[#0a1a2f] p-10 max-w-4xl mx-auto mt-8 bg-[#0a1a2f] transform transition-transform duration-500 hover:scale-105
+ ">
       <h2 className="text-2xl font-bold mb-6">Skills</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

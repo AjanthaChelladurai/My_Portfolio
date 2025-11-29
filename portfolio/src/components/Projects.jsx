@@ -28,18 +28,18 @@ const projects = [
 
 export default function Projects(){
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto ">
       <h2 className="text-2xl font-semibold mb-4">Projects</h2>
-      <div className="grid md:grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-2 gap-4 ">
         {projects.map(p=> (
           <div key={p.id} className="p-4 bg-[#071826] border border-gray-800 rounded-md">
-             <div className="h-36 bg-gray-800 rounded-md mb-3 flex items-center justify-center">
+             <div className="h-36 bg-gray-800 rounded-md mb-3 flex items-center justify-centertransform transition-transform duration-500 hover:scale-105 ">
                   <img src={p.image} className="h-full w-full object-cover rounded-md" /></div>
             <h3 className="font-semibold col text-blue-700 " >{p.title}</h3>
             <p className="text-gray-100 mt-2">{p.desc}</p>
             <p classname="  text-gray-500 mt-2"> <span className="text-blue-500 font-semibold">Tech Stack:</span>{p.tech}</p>
-            <a href={p.repo} target="_blank" className="mt-3 inline-block px-3 py-2 bg-blue-700 rounded-md">View Code</a>
-            <a href={p.live} target="_blank" className="mt-3 inline-block px-3 py-2 bg-blue-700 rounded-md ml-20">Live Demo</a>
+            <a href={p.repo} target="_blank" className="mt-3 inline-block px-3 py-2 bg-blue-700 rounded-md hover:bg-cyan-600 hover:scale-105 hover:shadow-lg transition-all duration-300">View Code</a>
+            <a href={p.live} target="_blank" className="mt-3 inline-block px-3 py-2 bg-blue-700 rounded-md ml-20 hover:bg-cyan-600 hover:scale-105 hover:shadow-lg transition-all duration-300">Live Demo</a>
 
           </div>
         ))}
