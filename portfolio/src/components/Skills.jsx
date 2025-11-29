@@ -10,17 +10,28 @@ const skills = [
   { name: "Bootstrap", img: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png" },
   { name: "Tailwind CSS", img: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
 ];
+
 export default function Skills() {
   return (
-    <div className="text-white bg-[#0a1a2f] p-10 max-w-4xl mx-auto mt-8 bg-[#0a1a2f] transform transition-transform duration-500 hover:scale-105
- ">
+    <div className="text-white bg-[#0a1a2f] p-10 max-w-4xl mx-auto mt-8 transform transition-transform duration-500 hover:scale-105">
       <h2 className="text-2xl font-bold mb-6">Skills</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {skills.map((skill) => (
-          <div key={skill.name} className="text-center">
-            <img src={skill.img} alt={skill.name} className="w-16 h-16 mx-auto" />
-            <p className="mt-2">{skill.name}</p>
+          <div
+            key={skill.name}
+            className="
+              group p-[2px] rounded-xl 
+              bg-[#0a1a2f] 
+              hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500
+              transition-all duration-300
+              hover:shadow-lg
+            "
+          >
+            <div className="bg-[#0a1a2f] rounded-xl p-4 flex flex-col items-center">
+              <img src={skill.img} alt={skill.name} className="w-16 h-16 mx-auto" />
+              <p className="mt-2">{skill.name}</p>
+            </div>
           </div>
         ))}
       </div>
