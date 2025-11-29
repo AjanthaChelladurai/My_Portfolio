@@ -3,13 +3,13 @@ import React from "react";
 const skills = [
   { name: "Java", img: "https://cdn-icons-png.flaticon.com/512/226/226777.png" },
   { name: "React", img: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" },
-  //{ name: "Node.js", img: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
   { name: "MongoDB", img: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" },
   { name: "HTML", img: "https://cdn-icons-png.flaticon.com/512/732/732212.png" },
   { name: "CSS", img: "https://cdn-icons-png.flaticon.com/512/732/732190.png" },
   { name: "JavaScript", img: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png" },
+  { name: "Bootstrap", img: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png" },
+  { name: "Tailwind CSS", img: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
 ];
-
 export default function Skills() {
   return (
     <div className="text-white bg-[#0a1a2f] p-10 max-w-4xl mx-auto mt-8 bg-[#0a1a2f] ">
