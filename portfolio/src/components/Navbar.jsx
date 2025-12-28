@@ -35,7 +35,7 @@ export default function Navbar() {
 
          
           <a
-            href="\Ajantha_C_Resume.pdf"
+            href="\Resume_Ajantha__.pdf"
             download
             className="bg-blue-700 px-3 py-1 rounded-md hover:bg-cyan-600 transition flex items-center gap-1"
           >
@@ -84,7 +84,7 @@ export default function Navbar() {
 
 
           <a
-            href="\Ajantha_C_Resume.pdf"
+            href="\Resume_Ajantha__.pdf"
             download
             className="mt-4 bg-blue-700 px-3 py-1 rounded-md flex items-center gap-1"
           >

@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Internship from "./components/Internship";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Education from "./components/Education";
 
 
 export default function App() {
@@ -21,6 +22,10 @@ export default function App() {
       <section id="about" className="pt-20">
         <About />
       </section>
+
+      
+        <Education/>
+      
 
       <section id="skills" className="pt-20">
         <Skills />

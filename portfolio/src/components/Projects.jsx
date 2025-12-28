@@ -1,17 +1,17 @@
 import React from 'react'
 
 const projects = [
-  { id:1,title:'Company-Portfolio-Model',
+  { id:1,title:'Productivity-Dashboard',
+    image:"productivit.jpeg",
+    desc:'Developed a React Task Management Dashboard with Redux, drag-and-drop tasks, dynamic charts, and persistent diary notes',
+    tech:"React,Redux,TaiwindCSS,React Router DOM,Recharts,Framer Motion",repo:'https://github.com/AjanthaChelladurai/Productivity-Dashboards',
+     live:'https://productivity-dashboard-1a7b.netlify.app/'
+  },
+  { id:2,title:'Company-Portfolio-Model',
      image:"company.jpeg",
      desc:'A stylish company portfolio built to display business details and attract clients.', 
      tech:"React,Tailwind CSS ,Form API ,React HooK,JSX,Vite",repo:'https://github.com/AjanthaChelladurai/Responsive-website-Reactjs',
      live:'https://responsive-website-ab1710.netlify.app/' 
-  },
-  { id:2, title:'Task-Manager', 
-    image:"task.jpeg",
-    desc:'A clean and fast task manager built with React to track and manage daily tasks.',
-    tech:"React ,Router DOM ,Framer Motion,Tailwind CSS", repo:'https://github.com/AjanthaChelladurai/Task-Manager' ,
-    live:'https://ajantha-task-manager1011ab.netlify.app/'
   },
   { id:3, title:'Modern Admin Dashboard',
     image:"dash.jpeg",
@@ -19,11 +19,27 @@ const projects = [
     tech:"React, Redux Toolkit, Tailwind CSS, Recharts, React Icons, Vite", repo:'https://github.com/AjanthaChelladurai/Admin-Dashboard' ,
     live:'https://ajantha-admin-dashboard1710.netlify.app/'
   },
-  { id:4,title:'violence Action Detection In CCTV Sureillance',
+  { id:4, title:'Task-Manager', 
+    image:"task.jpeg",
+    desc:'A clean and fast task manager built with React to track and manage daily tasks.',
+    tech:"React ,Router DOM ,Framer Motion,Tailwind CSS", repo:'https://github.com/AjanthaChelladurai/Task-Manager' ,
+    live:'https://ajantha-task-manager1011ab.netlify.app/'
+  },
+ 
+  {
+    id:5,title:'Heatmap Matrix Visualizer',
+    image :"Heatmap.jpeg",
+    desc : 'Built an interactive Heatmap Matrix Visualizer using React.js and HTML Canvas with dynamic cell coloring, hover tooltips, and data refresh/mutation features.',
+    tech :"React js, HTML canvas ,ReactHook", repo :'https://github.com/AjanthaChelladurai/Heatmap-Matrix-visualizer',
+    live:'https://ajan-heatmap-matrix-visualizer.netlify.app/'
+  },
+  { id:6,title:'violence Action Detection In CCTV Sureillance',
     image:"Ai.jpeg",
     desc:'A real-time violence detection system that monitors CCTV footage and identifies violent actions with high accuracy includng User Interface',
-    tech:"YOLO11,OpenCV,Twilio API, HTML,CSS,JavaScript,python",repo:'https://github.com/AjanthaChelladurai/Violence_action_detection_'
-  }
+    tech:"YOLO11,OpenCV,Twilio API, HTML,CSS,JavaScript,python",repo:'https://github.com/AjanthaChelladurai/Violence_action_detection_',
+  },
+ 
+  
 ]
 
 export default function Projects(){
